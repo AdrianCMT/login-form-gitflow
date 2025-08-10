@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IETMM - Iniciar Sesión</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Iconos de FontAwesome para el input -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Panel izquierdo -->
+        <div class="left-panel">
+            <canvas id="bubbleCanvas"></canvas>
+            <div class="left-content">
+                <div class="system-header">
+                    <i class="fa-solid fa-laptop-code"></i>
+                    <div class="system-header-text">
+                        <h1 class="system-title">IETMM Pro</h1>
+                        <p class="system-subtitle">Sistema de Gestión Educativa</p>
+                    </div>
+                </div>
+                
+                <div class="system-description">
+                    <h2>Gestiona tu institución educativa de manera inteligente</h2>
+                    <p>Plataforma integral que optimiza la administración académica, potencia el aprendizaje colaborativo y digitaliza todos los procesos educativos.</p>
+                </div>
+                
+                <div class="features">
+                    <div class="feature">
+                        <i class="fas fa-check-circle"></i>
+                        <span>Gestión completa de estudiantes y profesores</span>
+                    </div>
+                    <div class="feature">
+                        <i class="fas fa-check-circle"></i>
+                        <span>Registro de calificaciones en tiempo real</span>
+                    </div>
+                    <div class="feature">
+                        <i class="fas fa-check-circle"></i>
+                        <span>Control de asistencia por reconocimiento</span>
+                    </div>
+                    <div class="feature">
+                        <i class="fas fa-check-circle"></i>
+                        <span>Comunicación directa con padres de familia</span>
+                    </div>
+                </div>
+                
+                <div class="stats">
+                    <div class="stat">
+                        <span class="stat-number">1234+</span>
+                        <span class="stat-label">Estudiantes</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">45+</span>
+                        <span class="stat-label">Profesores</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">98%</span>
+                        <span class="stat-label">% Eficiencia</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Panel derecho -->
+        <div class="right-panel">
+            <img src="assets/escudo.gif" alt="Logo" class="logo">
+            <h1 class="title">Bienvenido a IETMM</h1>
+            <p class="subtitle">Inicia sesión para continuar</p>
+
+            <div class="login-box">
+                <h2>Iniciar Sesión</h2>
+                <p class="login-subtitle">Ingresa tus credenciales para acceder al sistema</p>
+
+                <form id="loginForm">
+                    <div class="input-group">
+                        <i class="fa fa-user"></i>
+                        <input type="text" placeholder="0000000" required>
+                    </div>
+                    <div class="input-group">
+                        <i class="fa fa-lock"></i>
+                        <input type="password" placeholder="••••••" required>
+                        <button type="button" class="toggle-password">
+                            <i class="fa fa-eye"></i>
+                        </button>
+                    </div>
+                    <a href="#" class="forgot-password">¿Olvidaste tu contraseña?</a>
+                    <button type="submit" class="login-btn">Iniciar Sesión 🡢</button>
+                </form>
+
+                <p class="register">¿No tienes cuenta? <a href="#">Contacta al administrador</a></p>
+            </div>
+
+            <p class="footer">© 2025 IETMM Pro. Todos los derechos reservados.</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
