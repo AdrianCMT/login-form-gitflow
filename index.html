@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GranCole - Iniciar Sesión</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Iconos de FontAwesome para el input -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Panel izquierdo -->
+        <div class="left-panel"></div>
+
+        <!-- Panel derecho -->
+        <div class="right-panel">
+            <img src="assets/escudo.gif" alt="Logo" class="logo">
+            <h1 class="title">Bienvenido a IETMM</h1>
+            <p class="subtitle">Inicia sesión para continuar</p>
+
+            <div class="login-box">
+                <h2>Iniciar Sesión</h2>
+                <p class="login-subtitle">Ingresa tus credenciales para acceder al sistema</p>
+
+                <form id="loginForm">
+                    <div class="input-group">
+                        <i class="fa fa-user"></i>
+                        <input type="text" placeholder="0000000" required>
+                    </div>
+                    <div class="input-group">
+                        <i class="fa fa-lock"></i>
+                        <input type="password" placeholder="••••••" required>
+                        <button type="button" class="toggle-password">
+                            <i class="fa fa-eye"></i>
+                        </button>
+                    </div>
+                    <a href="#" class="forgot-password">¿Olvidaste tu contraseña?</a>
+                    <button type="submit" class="login-btn">Iniciar Sesión 🡢</button>
+                </form>
+
+                <p class="register">¿No tienes cuenta? <a href="#">Contacta al administrador</a></p>
+            </div>
+
+            <p class="footer">© 2025 IETMM Pro. Todos los derechos reservados.</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
