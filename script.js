@@ -1,0 +1,18 @@
+document.getElementById('loginForm').addEventListener('submit', function(e) {
+    e.preventDefault();
+    console.log('Formulario enviado');
+});
+
+document.querySelector('.toggle-password').addEventListener('click', function() {
+    const passwordInput = this.previousElementSibling;
+    const icon = this.querySelector('i');
+    if (passwordInput.type === 'password') {
+        passwordInput.type = 'text';
+        icon.classList.remove('fa-eye');
+        icon.classList.add('fa-eye-slash');
+    } else {
+        passwordInput.type = 'password';
+        icon.classList.remove('fa-eye-slash');
+        icon.classList.add('fa-eye');
+    }
+});
