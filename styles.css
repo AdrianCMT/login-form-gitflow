@@ -16,10 +16,32 @@ body {
 
 .left-panel {
     flex: 1;
-    background-color: #e6e6e6;
+    position: relative;
+    background-image: url(assets/fondo.jpg);
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
 }
 
+.left-panel::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(30, 64, 175, 0.35);
+    z-index: 1;
+}
 
+#bubbleCanvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+}
 
 .right-panel {
     flex: 1;
